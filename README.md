@@ -1,2 +1,7 @@
 # Trading_LuisWebster
-Códigos utilizados para la clase de Microestructuras y sistemas de Trading
+#Repositorio laboratorio 1 Trading
+
+Cambiar función para descargar precios
+Modificar parámetro code
+Modificar api_key
+Modificar tickers
