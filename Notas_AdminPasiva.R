@@ -91,15 +91,17 @@ df_Portafolios <- data.frame(matrix(nrow=length(Port1$random_portfolio_objective
 colnames(df_Portafolios) <- c("Rend","Var","Clase")
 
 
-for(i in length(Port1$random_portfolio_objective_results)){
-  
+for(i in 1:length(Port1$random_portfolio_objective_results)){
+  i<-2
   df_Portafolios$Rend[i] <- round(Portafolios[[i]]$Medias*252,4)
   df_Portafolios$Var[i] <- round(sqrt(Portafolios[[i]]$Vars)*sqrt(252),4)
   df_Portafolios$Clase[i] <- "No-Frontera"
   
   for(k in 1:length(tk)){
     
-    df_Portafolios[i,paste("Peso", tk[k], sep="")] <- Portafolios[[i]]$Peso[k]
+    k<-2
+    df_Portafolios[i,paste("Peso_", tk[k], sep="")] <- Portafolios[[i]]$Peso[k]
+    
     df_Portafolios[i,paste("Titulos_ini_",tk[k],sep="")] <- 
       (Capital_Inicial*Portafolios[[i]]$Pesos[k])%/%Datos[[k]]$adj_close[1]
   }
@@ -107,5 +109,6 @@ for(i in length(Port1$random_portfolio_objective_results)){
 
 
 
+ 
 
 
