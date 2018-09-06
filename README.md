@@ -12,3 +12,5 @@ Agregar columnas con:
   Varianza
 
 Esto se realizó para cada uno de los portafolios
+
+Revisión de código para descargar precios de acciones y llenar correctamente el dataframe de portafolios. El usuario únicamente deberá seleccionar el Ticker de las acciones que desea estudiar.
