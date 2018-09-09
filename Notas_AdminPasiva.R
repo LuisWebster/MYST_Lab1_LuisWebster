@@ -185,3 +185,21 @@ plot_ly(Historicos_Ports) %>%
          xaxis = list(title = "Fechas", showgrid = T),
          yaxis = list(title = "Balance"), 
          legend = list(orientation = 'h', y = -0.25, x = 0.5))
+
+
+### Comentarios/Conclusiones financieras
+
+# La combinación de American Express, Visa y JPM nos da un portafolio interesante para los inversionistas que tienen
+# preferencia por los portafolios con un "alto riesgo" ya que podemos encontrar un portafolio con un rendimiento aproximado
+# de 16.98%, pero con una volatilidad de 19.92%. Por otro lado tenemos el portafolio con el mayor Sharpe Ratio (recordemos
+# que el sharpe ratio nos dice el exceso de rendimiento que recibiremos por cada unidad adicional de riesgo asumida) cuyo
+# rendimiento es de 13.45% con una volatilidad de 18.46%. Finalmente también existe un portafolio que podría adaptarse
+# a cliente con un perfil más conservador, pues tiene una varianza de 17.37% pero su rendimiento disminuye, colocándose
+# en 12.71%. Recordemos que para crear esta frontera eficiente de Markowitz, se estableció un rendimiento fijo con una
+# tasa de apenas 0.25%. Se pensará en realizar más simulaciones a futuro considerando una tasa más elevada (similar a la
+# tasa que actualmente tienen los Bonos del Tesoro o los Cetes. 
+
+# Finalmente, sabemos que el portafolio con el mayor rendimiento está compuesto de la siguiente manera:
+# - 1% AXP (American Express)
+# - 30.4% V (Visa)
+# - 68.6% JPM (JP Morgan)
